@@ -1,0 +1,137 @@
+
+/* Area pembungkus keterampilan */
+.skill-wrapper {
+    overflow: hidden;
+    width: 100%;
+    padding: 10px 0;
+}
+
+/* Daftar keterampilan berjalan */
+.skill-track {
+    display: flex;
+    width: max-content;
+    gap: 18px;
+    animation-duration: 25s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+/* Soft Skills bergerak ke kanan */
+.skill-kanan {
+    animation-name: gerak-kanan;
+}
+
+/* Hard Skills bergerak ke kiri */
+.skill-kiri {
+    animation-name: gerak-kiri;
+}
+
+/* Tampilan kotak keterampilan */
+.skill-item {
+    flex-shrink: 0;
+    padding: 12px 24px;
+    background-color: #F5F4F0;
+    color: #3B507D;
+    border: 1px solid #E7E2CE;
+    border-radius: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+
+/* Efek saat kursor diarahkan */
+.skill-item:hover {
+    background-color: #3B507D;
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* Animasi ke kiri */
+@keyframes gerak-kiri {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* Animasi ke kanan */
+@keyframes gerak-kanan {
+    from {
+        transform: translateX(-50%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Berhenti sementara saat kursor di area keterampilan */
+.skill-wrapper:hover .skill-track {
+    animation-play-state: paused;
+}
+
+
+
+/* Welcome Section */
+.welcome-section {
+    min-height: calc(100vh - 60px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F5F4F0;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+.welcome-section .container {
+    width: 100%;
+}
+
+.welcome-subtitle {
+    color: #3B507D;
+    letter-spacing: 3px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.welcome-section h1 {
+    color: #112250;
+    font-size: clamp(36px, 5vw, 60px);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.welcome-description {
+    color: #555;
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+.welcome-button {
+    display: inline-block;
+    background-color: #112250;
+    color: white;
+    text-decoration: none;
+    padding: 15px 32px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.welcome-button:hover {
+    background-color: #3B507D;
+    color: white;
+    transform: translateY(-3px);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#profil {
+    scroll-margin-top: 80px;
+}
