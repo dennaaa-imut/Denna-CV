@@ -135,3 +135,108 @@ html {
 #profil {
     scroll-margin-top: 80px;
 }
+
+
+
+
+/* Contact Section */
+.contact-section {
+    padding: 80px 0;
+    background-color: #F5F4F0;
+    color: #112250;
+}
+
+.contact-heading {
+    max-width: 650px;
+    margin-bottom: 30px;
+}
+
+.section-label {
+    display: inline-block;
+    margin-bottom: 12px;
+    color: #3B507D;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.contact-heading h2 {
+    margin-bottom: 14px;
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    font-weight: 800;
+}
+
+.contact-heading p {
+    color: #5E6678;
+    line-height: 1.8;
+}
+
+.contact-card {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    height: 100%;
+    min-height: 110px;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border: 1px solid #E7E2CE;
+    border-radius: 16px;
+    color: #112250;
+    text-decoration: none;
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.contact-card > i:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    background-color: #E7E2CE;
+    border-radius: 12px;
+    color: #3B507D;
+    font-size: 1.3rem;
+}
+
+.contact-card h5 {
+    margin: 0 0 5px;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.contact-card p {
+    margin: 0;
+    color: #6B7280;
+    font-size: 0.8rem;
+}
+
+.contact-arrow {
+    margin-left: auto;
+    color: #3B507D;
+    font-size: 0.9rem;
+}
+
+.contact-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(17, 34, 80, 0.08);
+    color: #112250;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .contact-card {
+        transition: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact-section {
+        padding: 55px 0;
+    }
+
+    .contact-card {
+        min-height: 95px;
+    }
+}
+
